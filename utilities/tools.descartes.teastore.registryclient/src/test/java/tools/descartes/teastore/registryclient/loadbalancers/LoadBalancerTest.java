@@ -82,7 +82,7 @@ public class LoadBalancerTest {
 			context.addServletMappingDecoded("/rest/" + TIMEOUTING_ENDPOINT, "timeoutStatusServlet");
 			context.addServletMappingDecoded("/rest/" + TIMEOUTING_ENDPOINT + "/*", "timeoutStatusServlet");
 			testTomcats.add(testTomcat);
-		} catch (ServletException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
